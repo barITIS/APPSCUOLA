@@ -18,7 +18,7 @@
     }
   ],
   "background_color": "black",
-  "theme_color": "#1565c0",
+  "theme_color": "#FFF",
   "start_url": "./?utm_source=web_app_manifest",
   "display": "standalone",
   "orientation": "any"
