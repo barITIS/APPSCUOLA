@@ -326,16 +326,12 @@
         }
 
         function aggiungiProdottoCasualeAlCarrello() {
-            var prodottiSimulati = [
-                { nome: "Prodotto 1", descrizione: "Descrizione prodotto 1", prezzo: 5.99, quantita: 10 },
-                { nome: "Prodotto 2", descrizione: "Descrizione prodotto 2", prezzo: 3.99, quantita: 15 },
-                { nome: "Prodotto 3", descrizione: "Descrizione prodotto 3", prezzo: 7.99, quantita: 20 }
-            ];
-            var prodottoCasuale = prodottiSimulati[Math.floor(Math.random() * prodottiSimulati.length)];
-            var quantitaCasuale = Math.floor(Math.random() * prodottoCasuale.quantita) + 1;
+            var prodottoSelezionato = { nome: "Prodotto 1", descrizione: "Descrizione prodotto 1", prezzo: 5.99, quantita: 10 };
+            var quantitaSelezionata = 3;
 
-            aggiungiProdottoAlCarrello(prodottoCasuale.nome, prodottoCasuale.prezzo, quantitaCasuale, prodottoCasuale.quantita);
+            aggiungiProdottoAlCarrello(prodottoSelezionato.nome, prodottoSelezionato.prezzo, quantitaSelezionata, prodottoSelezionato.quantita);
         }
+
 
         window.addEventListener('load', (event) => {
             visualizzaCarrello();
